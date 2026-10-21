@@ -27,3 +27,33 @@
 @media(max-width:560px){.header .nav-contact{align-self:flex-start;margin:12px 0 0;padding:12px 20px}.career-timeline h4{font-size:17px}}
 
 .education-dates{font-size:13px;color:var(--ink);margin-top:14px}.education-dates span{color:var(--muted);font-size:12px}
+
+/* Portrait and original brand assets. */
+.hero-masthead{display:grid;grid-template-columns:minmax(0,1fr) 280px;gap:40px;align-items:center;margin:38px 0 44px}
+.hero-masthead h1{font-size:clamp(56px,7.4vw,106px);margin:0;line-height:1.02}
+.hero-masthead h1>span{margin-left:0}
+.hero-portrait{margin:0;position:relative;padding:0 12px 12px 0}
+.hero-portrait::after{content:'';position:absolute;inset:12px 0 0 12px;border:1px solid var(--accent);z-index:-1}
+.hero-portrait img{display:block;width:100%;height:auto;aspect-ratio:735/1102;object-fit:cover}
+.brand-logo{display:block;width:84px;height:84px;object-fit:contain;flex-shrink:0;background:white}
+.employer-brand,.venture-brand{display:flex;align-items:center;gap:22px;margin:18px 0 24px;max-width:100%}
+.employer-brand .large-heading,.venture-brand h3{margin:0}
+.venture-brand h3{font-size:clamp(27px,2.8vw,40px)}
+.project-brand{margin-top:18px}
+.project-brand .brand-logo{width:72px;height:72px;margin-bottom:16px}
+.project-brand h3 a{display:inline-flex;align-items:baseline;gap:15px}
+.project-brand h3 a:hover{color:var(--accent)}
+.project-brand h3 a>span[aria-hidden]{font-family:var(--sans);font-size:20px}
+@media(max-width:1100px){.hero-masthead{grid-template-columns:minmax(0,1fr) 220px;gap:24px}.hero-masthead h1{font-size:7vw}.venture-brand{gap:15px}.venture-brand .brand-logo{width:68px;height:68px}}
+@media(max-width:760px){.hero-masthead{grid-template-columns:minmax(0,1fr) 180px;gap:18px}.hero-masthead h1{font-size:8.8vw}.venture-brand{align-items:flex-start;flex-direction:column}.hero-portrait{padding:0 8px 8px 0}}
+@media(max-width:560px){.hero-masthead{grid-template-columns:1fr;gap:26px;margin-block:28px}.hero-masthead h1{font-size:clamp(44px,12.2vw,68px)}.hero-portrait{width:240px;justify-self:end;margin-right:8px}.venture-brand{flex-direction:row;align-items:center}.venture-brand h3{font-size:clamp(26px,7vw,30px)}}
+
+/* A single entrance sequence and quiet, once-only section reveals. */
+@media(prefers-reduced-motion:no-preference){
+  .hero-portrait{animation:rise .9s .12s ease both}
+  .reveal-pending{opacity:0;transform:translateY(18px)}
+  .reveal-pending.is-visible{opacity:1;transform:none;transition:opacity .65s ease,transform .65s cubic-bezier(.2,.65,.3,1)}
+  .button,.header .nav-contact{transition:background .2s,border-color .2s,transform .2s}
+  .button:hover,.header .nav-contact:hover{transform:translateY(-2px)}
+}
+@media print{.reveal-pending{opacity:1;transform:none}.hero-masthead{grid-template-columns:1fr 160px}.hero-masthead h1{font-size:62px}}
