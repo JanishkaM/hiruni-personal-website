@@ -1,702 +1,105 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Hiruni Weerawansha | Entrepreneur & Co-Founder</title>
-
-<!-- SEO Meta Tags -->
-<meta name="description" content="Hiruni Weerawansha - Entrepreneur, co-founder, and innovator. Building ventures and leading successful business initiatives with a focus on strategic growth and impact.">
-<meta name="keywords" content="entrepreneur, co-founder, startup, business, ventures, innovation, strategic growth">
-<meta name="author" content="Hiruni Weerawansha">
-<meta name="theme-color" content="#c9a84c">
-<meta name="color-scheme" content="dark">
-
-<!-- Favicon Links -->
-<link rel="icon" type="image/x-icon" href="icons/favicon.ico">
-<link rel="icon" type="image/png" sizes="16x16" href="icons/icon-16x16.png">
-<link rel="icon" type="image/png" sizes="32x32" href="icons/icon-33x32.png">
-<link rel="icon" type="image/png" sizes="64x64" href="icons/icon-64x64.png">
-<link rel="icon" type="image/png" sizes="128x128" href="icons/icon-128x128.png">
-<link rel="apple-touch-icon" href="icons/icon-128x128.png">
-<link rel="shortcut icon" href="icons/favicon.ico">
-
-<!-- Open Graph Meta Tags -->
-<meta property="og:type" content="profile">
-<meta property="og:url" content="https://imhiru.netlify.app/">
-<meta property="og:title" content="Hiruni Weerawansha | Entrepreneur & Co-Founder">
-<meta property="og:description" content="Hiruni Weerawansha - Entrepreneur, co-founder, and innovator. Building ventures and leading successful business initiatives with a focus on strategic growth and impact.">
-<meta property="og:image" content="https://imhiru.netlify.app/icons/icon-128x128.png">
-<meta property="og:site_name" content="Hiruni Weerawansha">
-<meta property="profile:first_name" content="Hiruni">
-<meta property="profile:last_name" content="Weerawansha">
-
-<!-- Twitter Card Meta Tags -->
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:url" content="https://imhiru.netlify.app/">
-<meta name="twitter:title" content="Hiruni Weerawansha | Entrepreneur & Co-Founder">
-<meta name="twitter:description" content="Hiruni Weerawansha - Entrepreneur, co-founder, and innovator. Building ventures and leading successful business initiatives with a focus on strategic growth and impact.">
-<meta name="twitter:image" content="https://imhiru.netlify.app/icons/icon-128x128.png">
-
-<!-- Additional SEO Meta Tags -->
-<meta name="robots" content="index, follow">
-<meta name="googlebot" content="index, follow">
-<meta name="language" content="English">
-<meta name="revisit-after" content="7 days">
-<meta name="canonical" href="https://imhiru.netlify.app/">
-
-<!-- Preconnect to External Resources -->
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=Outfit:wght@200;300;400;500;600&family=DM+Mono:wght@300;400&display=swap" rel="stylesheet">
-<style>
-*,*::before,*::after{margin:0;padding:0;box-sizing:border-box;}
-:root{
-  --bg:#0c0c0e;
-  --bg2:#111114;
-  --bg3:#16161a;
-  --panel:#1c1c21;
-  --panel2:#222228;
-  --gold:#c9a84c;
-  --gold2:#e8c97a;
-  --gold3:rgba(201,168,76,0.12);
-  --white:#ffffff;
-  --text:#e8e6e0;
-  --text2:#9d9b94;
-  --text3:#c4c2bb;
-  --border:rgba(201,168,76,0.15);
-  --border2:rgba(255,255,255,0.06);
-  --serif:"Cormorant Garamond",serif;
-  --sans:"Outfit",sans-serif;
-  --mono:"DM Mono",monospace;
-  --glow:0 0 40px rgba(201,168,76,0.08);
-}
-html{scroll-behavior:smooth;}
-body{font-family:var(--sans);background:var(--bg);color:var(--text);overflow-x:hidden;cursor:none;}
-
-/* NOISE TEXTURE */
-body::before{content:"";position:fixed;inset:0;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.03'/%3E%3C/svg%3E");pointer-events:none;z-index:0;opacity:.4;}
-
-/* CURSOR */
-.cur{width:5px;height:5px;background:var(--gold);border-radius:50%;position:fixed;pointer-events:none;z-index:9999;transform:translate(-50%,-50%);box-shadow:0 0 8px var(--gold);}
-.cur-ring{width:28px;height:28px;border:1px solid rgba(201,168,76,0.4);border-radius:50%;position:fixed;pointer-events:none;z-index:9998;transform:translate(-50%,-50%);transition:left .1s ease,top .1s ease,width .3s,height .3s;}
-
-/* NAV */
-nav{position:fixed;top:0;left:0;right:0;z-index:200;display:flex;align-items:center;justify-content:space-between;padding:22px 80px;background:rgba(12,12,14,0.92);backdrop-filter:blur(24px);border-bottom:1px solid var(--border);}
-.nav-logo{font-family:var(--serif);font-size:20px;font-weight:500;color:var(--white);text-decoration:none;letter-spacing:.06em;}
-.nav-logo em{font-style:italic;color:var(--gold);font-weight:300;}
-.nav-links{display:flex;gap:44px;align-items:center;}
-.nav-links a{font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:var(--text2);text-decoration:none;transition:color .3s;font-weight:400;}
-.nav-links a:hover{color:var(--gold);}
-.nav-cta{padding:10px 28px;border:1px solid var(--gold);color:var(--gold);font-size:10px;letter-spacing:.22em;text-transform:uppercase;font-weight:500;text-decoration:none;transition:all .3s;font-family:var(--sans);}
-.nav-cta:hover{background:var(--gold);color:var(--bg);}
-
-/* HERO */
-#hero{min-height:100vh;display:flex;align-items:center;position:relative;z-index:1;padding:120px 80px 80px;overflow:hidden;}
-.hero-bg-text{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);font-family:var(--serif);font-size:300px;font-weight:600;color:rgba(201,168,76,0.025);white-space:nowrap;pointer-events:none;letter-spacing:-.02em;font-style:italic;z-index:0;}
-.hero-vline{position:absolute;right:420px;top:0;bottom:0;width:1px;background:linear-gradient(180deg,transparent,rgba(201,168,76,0.2) 30%,rgba(201,168,76,0.2) 70%,transparent);z-index:0;}
-.hero-inner{max-width:1240px;width:100%;margin:0 auto;display:grid;grid-template-columns:1fr 380px;gap:80px;align-items:center;position:relative;z-index:1;}
-.hero-kicker{font-family:var(--mono);font-size:10px;letter-spacing:.35em;color:var(--gold);text-transform:uppercase;margin-bottom:24px;display:flex;align-items:center;gap:14px;opacity:0;animation:fadeUp .9s .2s forwards;}
-.hero-kicker::before{content:"";width:36px;height:1px;background:var(--gold);}
-.hero-name{font-family:var(--serif);font-size:78px;font-weight:600;line-height:.92;letter-spacing:-.01em;opacity:0;animation:fadeUp .9s .4s forwards;}
-.hero-name .first{color:var(--white);display:block;}
-.hero-name .last{color:var(--gold);display:block;font-style:italic;font-weight:300;}
-.hero-divider{width:80px;height:1px;background:linear-gradient(90deg,var(--gold),transparent);margin:28px 0;opacity:0;animation:fadeUp .9s .55s forwards;}
-.hero-roles{display:flex;gap:10px;flex-wrap:wrap;opacity:0;animation:fadeUp .9s .65s forwards;}
-.role-tag{font-size:10px;letter-spacing:.16em;text-transform:uppercase;padding:7px 18px;border:1px solid var(--border);color:var(--text2);font-weight:400;background:var(--gold3);transition:all .3s;}
-.role-tag:hover{border-color:var(--gold);color:var(--gold);}
-.hero-bio{font-size:15px;line-height:1.9;color:var(--text2);margin-top:28px;font-weight:300;max-width:520px;opacity:0;animation:fadeUp .9s .78s forwards;}
-.hero-bio strong{color:var(--text);font-weight:400;}
-.hero-ctas{display:flex;gap:14px;margin-top:40px;opacity:0;animation:fadeUp .9s .9s forwards;align-items:center;}
-.btn-gold{padding:14px 40px;background:var(--gold);color:var(--bg);font-size:10px;letter-spacing:.22em;text-transform:uppercase;font-weight:600;text-decoration:none;transition:all .3s;display:inline-block;font-family:var(--sans);}
-.btn-gold:hover{background:var(--gold2);box-shadow:0 8px 32px rgba(201,168,76,0.25);}
-.btn-outline{padding:14px 40px;background:transparent;color:var(--gold);font-size:10px;letter-spacing:.22em;text-transform:uppercase;font-weight:500;text-decoration:none;transition:all .3s;display:inline-block;border:1px solid var(--border);font-family:var(--sans);}
-.btn-outline:hover{border-color:var(--gold);background:var(--gold3);}
-
-/* HERO CARD */
-.hero-card{background:var(--panel);border:1px solid var(--border);padding:44px 36px;position:relative;opacity:0;animation:fadeIn 1.2s .8s forwards;}
-.hero-card::before{content:"";position:absolute;top:-1px;left:24px;right:24px;height:1px;background:linear-gradient(90deg,transparent,var(--gold),transparent);}
-.hc-crown{font-family:var(--serif);font-size:72px;font-weight:600;color:rgba(201,168,76,0.07);line-height:1;margin-bottom:28px;font-style:italic;letter-spacing:-.02em;}
-.hc-label{font-family:var(--mono);font-size:9px;letter-spacing:.28em;color:var(--text2);text-transform:uppercase;margin-bottom:22px;display:flex;align-items:center;gap:10px;}
-.hc-label::before{content:"";width:18px;height:1px;background:var(--gold);}
-.hc-grid{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--border2);margin-bottom:28px;}
-.hc-stat{background:var(--panel);padding:22px 16px;text-align:center;}
-.hc-num{font-family:var(--serif);font-size:36px;font-weight:500;color:var(--gold);display:block;line-height:1;}
-.hc-lbl{font-family:var(--mono);font-size:9px;letter-spacing:.16em;color:var(--text2);margin-top:6px;display:block;text-transform:uppercase;}
-.hc-sep{height:1px;background:var(--border2);margin-bottom:22px;}
-.hc-avail{display:flex;align-items:center;gap:10px;font-family:var(--mono);font-size:9px;color:var(--text2);letter-spacing:.15em;text-transform:uppercase;}
-.hc-dot{width:6px;height:6px;background:#5cb85c;border-radius:50%;flex-shrink:0;box-shadow:0 0 6px #5cb85c;animation:glow 2s infinite;}
-
-/* MARQUEE */
-.marquee-wrap{background:var(--panel);border-top:1px solid var(--border);border-bottom:1px solid var(--border);padding:18px 0;overflow:hidden;position:relative;z-index:1;}
-.marquee-track{display:flex;gap:0;animation:marquee 22s linear infinite;width:max-content;}
-.marquee-item{font-family:var(--mono);font-size:10px;letter-spacing:.25em;color:var(--text2);text-transform:uppercase;padding:0 40px;white-space:nowrap;display:flex;align-items:center;gap:18px;}
-.marquee-item::after{content:"◆";color:var(--gold);font-size:8px;}
-@keyframes marquee{from{transform:translateX(0)}to{transform:translateX(-50%)}}
-
-/* SECTIONS */
-section{padding:110px 0;position:relative;z-index:1;}
-.section-inner{max-width:1240px;margin:0 auto;padding:0 80px;}
-.sec-kicker{font-family:var(--mono);font-size:9px;letter-spacing:.32em;color:var(--gold);text-transform:uppercase;margin-bottom:14px;display:flex;align-items:center;gap:14px;}
-.sec-kicker::before{content:"";width:28px;height:1px;background:var(--gold);}
-.sec-title{font-family:var(--serif);font-size:52px;font-weight:500;color:var(--white);line-height:1.05;letter-spacing:-.01em;margin-bottom:14px;}
-.sec-title em{color:var(--gold);font-style:italic;font-weight:300;}
-.sec-sub{font-size:15px;color:var(--text2);font-weight:300;line-height:1.8;max-width:580px;}
-
-/* ABOUT */
-#about{background:var(--bg2);}
-.about-wrap{display:grid;grid-template-columns:320px 1fr;gap:90px;align-items:start;margin-top:64px;}
-.about-panel{background:var(--panel);border:1px solid var(--border);position:relative;overflow:hidden;}
-.about-panel::before{content:"";position:absolute;top:-1px;left:20px;right:20px;height:1px;background:linear-gradient(90deg,transparent,var(--gold),transparent);}
-.about-panel::after{content:"";position:absolute;bottom:-1px;left:20px;right:20px;height:1px;background:linear-gradient(90deg,transparent,rgba(201,168,76,0.4),transparent);}
-.ap-top{padding:40px 32px 32px;}
-.ap-monogram{font-family:var(--serif);font-size:64px;font-weight:600;color:rgba(201,168,76,0.1);line-height:1;font-style:italic;letter-spacing:-.02em;}
-.ap-initials{font-family:var(--serif);font-size:40px;font-weight:500;color:var(--gold);line-height:1;margin-top:6px;letter-spacing:.04em;}
-.ap-name{font-family:var(--mono);font-size:9px;letter-spacing:.2em;color:var(--text2);text-transform:uppercase;margin-top:14px;}
-.ap-rule{width:40px;height:1px;background:var(--gold);margin:20px 0;opacity:.5;}
-.ap-stats{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--border2);}
-.ap-stat{background:var(--panel);padding:20px;text-align:center;}
-.ap-stat-num{font-family:var(--serif);font-size:28px;font-weight:500;color:var(--gold);display:block;}
-.ap-stat-lbl{font-family:var(--mono);font-size:8px;letter-spacing:.15em;color:var(--text2);text-transform:uppercase;margin-top:4px;display:block;}
-.about-content p{font-size:15px;line-height:1.95;color:var(--text2);font-weight:300;margin-bottom:18px;}
-.about-content p strong{color:var(--text);font-weight:400;}
-.edu-block{background:var(--panel);border:1px solid var(--border);border-left:2px solid var(--gold);padding:24px 28px;margin-top:32px;}
-.edu-tag{font-family:var(--mono);font-size:9px;letter-spacing:.25em;color:var(--gold);text-transform:uppercase;margin-bottom:10px;display:block;}
-.edu-degree{font-family:var(--serif);font-size:20px;font-weight:500;color:var(--white);margin-bottom:5px;}
-.edu-detail{font-size:13px;color:var(--text2);font-weight:300;}
-.edu-pill{display:inline-flex;align-items:center;gap:7px;margin-top:10px;font-family:var(--mono);font-size:9px;color:var(--gold);letter-spacing:.14em;background:var(--gold3);padding:4px 12px;border:1px solid var(--border);}
-.about-list{display:flex;flex-direction:column;gap:1px;margin-top:28px;}
-.al-item{display:flex;gap:20px;align-items:flex-start;padding:18px 22px;background:var(--panel);border:1px solid var(--border2);transition:all .3s;}
-.al-item:hover{border-color:var(--border);background:var(--panel2);}
-.al-num{font-family:var(--mono);font-size:10px;color:var(--gold);flex-shrink:0;margin-top:2px;opacity:.7;}
-.al-body h4{font-size:13px;font-weight:500;color:var(--text);margin-bottom:3px;letter-spacing:.03em;}
-.al-body p{font-size:12px;color:var(--text2);line-height:1.6;font-weight:300;}
-
-/* VENTURES */
-#ventures{background:var(--bg);}
-.ventures-wrap{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--border2);margin-top:60px;}
-.vc{background:var(--bg);padding:44px 36px;position:relative;overflow:hidden;transition:all .4s;cursor:none;}
-.vc::before{content:"";position:absolute;top:0;left:0;right:0;height:1px;background:linear-gradient(90deg,transparent,var(--gold),transparent);opacity:0;transition:opacity .4s;}
-.vc::after{content:"";position:absolute;bottom:0;left:0;width:2px;height:0;background:var(--gold);transition:height .4s;}
-.vc:hover{background:var(--panel);}
-.vc:hover::before{opacity:1;}
-.vc:hover::after{height:100%;}
-.vc-badge{display:inline-flex;align-items:center;gap:8px;font-family:var(--mono);font-size:9px;letter-spacing:.2em;color:var(--gold);border:1px solid var(--border);padding:4px 14px;text-transform:uppercase;margin-bottom:28px;}
-.vc-badge::before{content:"◆";font-size:6px;}
-.vc-icon{font-size:36px;margin-bottom:20px;display:block;}
-.vc-num{font-family:var(--mono);font-size:10px;color:var(--text2);margin-bottom:12px;display:block;letter-spacing:.2em;}
-.vc-title{font-family:var(--serif);font-size:24px;font-weight:500;color:var(--white);margin-bottom:6px;line-height:1.15;}
-.vc-sub{font-family:var(--mono);font-size:9px;letter-spacing:.15em;color:var(--gold);text-transform:uppercase;margin-bottom:18px;opacity:.7;}
-.vc-desc{font-size:13px;color:var(--text2);line-height:1.85;font-weight:300;}
-.vc-tags{display:flex;flex-wrap:wrap;gap:6px;margin-top:22px;}
-.vc-tag{font-size:9px;letter-spacing:.1em;padding:4px 10px;border:1px solid var(--border2);color:var(--text2);}
-
-/* SERVICES */
-#services{background:var(--bg2);}
-.services-wrap{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--border2);margin-top:60px;}
-.svc{background:var(--bg2);padding:40px 32px;transition:all .4s;cursor:none;position:relative;overflow:hidden;}
-.svc::before{content:"";position:absolute;top:0;left:0;width:100%;height:1px;background:linear-gradient(90deg,transparent,var(--gold),transparent);transform:scaleX(0);transition:transform .4s;}
-.svc:hover{background:var(--panel);}
-.svc:hover::before{transform:scaleX(1);}
-.svc-num{font-family:var(--mono);font-size:9px;color:var(--text2);margin-bottom:18px;display:block;letter-spacing:.2em;opacity:.6;}
-.svc-icon{font-size:28px;margin-bottom:16px;display:block;}
-.svc-title{font-family:var(--serif);font-size:21px;font-weight:500;color:var(--white);margin-bottom:14px;line-height:1.2;}
-.svc-desc{font-size:13px;color:var(--text2);line-height:1.85;font-weight:300;}
-.svc-tags{display:flex;flex-wrap:wrap;gap:5px;margin-top:20px;}
-.svc-tag{font-size:9px;letter-spacing:.1em;padding:3px 10px;border:1px solid var(--border2);color:var(--text2);}
-
-/* PROJECTS */
-#projects{background:var(--bg);}
-.projects-wrap{display:grid;grid-template-columns:repeat(2,1fr);gap:1px;background:var(--border2);margin-top:60px;}
-.proj{background:var(--bg);overflow:hidden;transition:all .4s;cursor:none;}
-.proj:hover{background:var(--panel);}
-.proj-top{padding:26px 32px 20px;border-bottom:1px solid var(--border2);display:flex;justify-content:space-between;align-items:center;}
-.proj-badge{font-family:var(--mono);font-size:9px;padding:3px 10px;border:1px solid;letter-spacing:.12em;}
-.proj-badge.live{border-color:rgba(92,184,92,0.4);color:#5cb85c;}
-.proj-badge.grow{border-color:rgba(201,168,76,0.4);color:var(--gold);}
-.proj-body{padding:24px 32px 32px;}
-.proj-num{font-family:var(--mono);font-size:9px;color:var(--text2);margin-bottom:10px;display:block;letter-spacing:.2em;opacity:.6;}
-.proj-title{font-family:var(--serif);font-size:22px;font-weight:500;color:var(--white);margin-bottom:10px;line-height:1.2;}
-.proj-desc{font-size:13px;color:var(--text2);line-height:1.85;font-weight:300;margin-bottom:18px;}
-.proj-stack{display:flex;gap:6px;flex-wrap:wrap;}
-.stack-tag{font-size:9px;letter-spacing:.1em;padding:3px 10px;border:1px solid var(--border2);color:var(--text2);}
-
-/* AI CHAT */
-#ai-section{background:var(--bg2);}
-.ai-wrap{display:grid;grid-template-columns:1fr 1fr;gap:80px;margin-top:60px;align-items:start;}
-.ai-info h3{font-family:var(--serif);font-size:30px;font-weight:500;color:var(--white);margin-bottom:16px;line-height:1.2;}
-.ai-info p{font-size:14px;color:var(--text2);line-height:1.85;font-weight:300;margin-bottom:14px;}
-.ai-feats{display:flex;flex-direction:column;gap:1px;margin-top:24px;}
-.ai-feat{display:flex;gap:16px;align-items:center;padding:14px 18px;background:var(--panel);border:1px solid var(--border2);transition:all .3s;}
-.ai-feat:hover{border-color:var(--border);}
-.ai-feat-icon{font-size:15px;flex-shrink:0;}
-.ai-feat-text{font-size:13px;color:var(--text2);font-weight:300;}
-.chat-box{background:var(--panel);border:1px solid var(--border);overflow:hidden;position:relative;}
-.chat-box::before{content:"";position:absolute;top:-1px;left:20px;right:20px;height:1px;background:linear-gradient(90deg,transparent,var(--gold),transparent);}
-.chat-header{background:rgba(201,168,76,0.04);border-bottom:1px solid var(--border2);padding:16px 20px;display:flex;align-items:center;gap:12px;}
-.chat-av{width:34px;height:34px;background:var(--gold3);border:1px solid var(--border);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:15px;}
-.chat-name{font-family:var(--serif);font-size:15px;font-weight:500;color:var(--white);}
-.chat-online{font-family:var(--mono);font-size:9px;color:#5cb85c;display:flex;align-items:center;gap:6px;letter-spacing:.12em;}
-.chat-online::before{content:"";width:5px;height:5px;background:#5cb85c;border-radius:50%;display:inline-block;animation:glow 2s infinite;}
-.quick-qs{padding:10px 16px;display:flex;gap:6px;flex-wrap:wrap;border-bottom:1px solid var(--border2);}
-.qq{font-size:10px;padding:5px 12px;border:1px solid var(--border2);color:var(--text2);background:transparent;cursor:none;transition:all .25s;font-family:var(--sans);font-weight:300;}
-.qq:hover{border-color:var(--border);color:var(--gold);}
-.chat-msgs{height:280px;overflow-y:auto;padding:18px;display:flex;flex-direction:column;gap:10px;}
-.chat-msgs::-webkit-scrollbar{width:2px;}
-.chat-msgs::-webkit-scrollbar-thumb{background:var(--border);}
-.msg{max-width:85%;padding:11px 15px;font-size:13px;line-height:1.7;font-weight:300;}
-.msg.bot{background:var(--bg3);border:1px solid var(--border2);color:var(--text2);align-self:flex-start;border-radius:0 10px 10px 10px;}
-.msg.user{background:var(--gold3);border:1px solid var(--border);color:var(--text);align-self:flex-end;border-radius:10px 0 10px 10px;}
-.typing-dot{width:5px;height:5px;background:var(--gold);border-radius:50%;animation:typingBounce 1.2s infinite;display:inline-block;margin:0 2px;opacity:.6;}
-.typing-dot:nth-child(2){animation-delay:.2s;}.typing-dot:nth-child(3){animation-delay:.4s;}
-@keyframes typingBounce{0%,60%,100%{transform:translateY(0)}30%{transform:translateY(-6px)}}
-.chat-input-area{padding:14px 16px;border-top:1px solid var(--border2);display:flex;gap:8px;}
-.chat-input{flex:1;background:var(--bg3);border:1px solid var(--border2);padding:10px 14px;color:var(--text);font-family:var(--sans);font-size:13px;outline:none;transition:border-color .25s;font-weight:300;}
-.chat-input:focus{border-color:var(--border);}
-.chat-input::placeholder{color:var(--text2);opacity:.5;}
-.chat-send{padding:10px 22px;background:var(--gold);border:none;color:var(--bg);font-family:var(--sans);font-size:10px;font-weight:600;letter-spacing:.18em;text-transform:uppercase;cursor:none;transition:all .3s;}
-.chat-send:hover{background:var(--gold2);}
-
-/* CONTACT */
-#contact{background:var(--bg);}
-.contact-wrap{display:grid;grid-template-columns:1fr 1fr;gap:80px;margin-top:60px;align-items:start;}
-.contact-left{}
-.contact-left > p{font-size:15px;color:var(--text2);line-height:1.9;font-weight:300;margin-top:20px;max-width:420px;}
-.cc-list{display:flex;flex-direction:column;gap:1px;margin-top:36px;}
-.cc{background:var(--panel);border:1px solid var(--border2);padding:16px 22px;display:flex;gap:16px;align-items:center;transition:all .3s;}
-.cc:hover{border-color:var(--border);background:var(--panel2);}
-.cc-icon{font-size:18px;flex-shrink:0;}
-.cc-lbl{font-family:var(--mono);font-size:9px;color:var(--text2);letter-spacing:.18em;text-transform:uppercase;margin-bottom:3px;opacity:.7;}
-.cc-val{font-size:13px;color:var(--text);font-weight:400;}
-.cc-val a{color:var(--gold);text-decoration:none;transition:opacity .2s;}
-.cc-val a:hover{opacity:.8;}
-.contact-form{display:flex;flex-direction:column;gap:18px;}
-.form-row{display:grid;grid-template-columns:1fr 1fr;gap:14px;}
-.form-group{display:flex;flex-direction:column;gap:8px;}
-.form-lbl{font-family:var(--mono);font-size:9px;color:var(--gold);letter-spacing:.22em;text-transform:uppercase;opacity:.8;}
-.form-input,.form-textarea,.form-select{background:var(--panel);border:1px solid var(--border2);padding:13px 16px;color:var(--text);font-family:var(--sans);font-size:14px;outline:none;transition:all .3s;width:100%;font-weight:300;}
-.form-input:focus,.form-textarea:focus,.form-select:focus{border-color:var(--border);}
-.form-input::placeholder,.form-textarea::placeholder{color:var(--text2);opacity:.4;}
-.form-textarea{resize:none;height:110px;}
-.form-select{cursor:none;appearance:none;color:var(--text2);}
-.form-select option{background:var(--panel);}
-.form-submit{padding:16px;background:var(--gold);color:var(--bg);font-family:var(--sans);font-size:10px;font-weight:600;letter-spacing:.22em;text-transform:uppercase;cursor:none;transition:all .3s;border:1px solid var(--gold);}
-.form-submit:hover{background:transparent;color:var(--gold);}
-.form-success{display:none;text-align:center;padding:18px;font-family:var(--mono);font-size:10px;color:#5cb85c;border:1px solid rgba(92,184,92,0.2);background:rgba(92,184,92,0.04);margin-top:4px;letter-spacing:.12em;}
-
-/* FOOTER */
-footer{background:var(--panel);border-top:1px solid var(--border);padding:44px 80px;display:flex;align-items:center;justify-content:space-between;position:relative;z-index:1;}
-footer::before{content:"";position:absolute;top:-1px;left:80px;right:80px;height:1px;background:linear-gradient(90deg,transparent,var(--gold),transparent);}
-.footer-logo{font-family:var(--serif);font-size:20px;font-weight:500;color:var(--white);font-style:italic;}
-.footer-copy{font-family:var(--mono);font-size:9px;color:var(--text2);letter-spacing:.14em;text-align:center;opacity:.6;}
-.footer-links{display:flex;gap:28px;}
-.footer-links a{font-size:10px;letter-spacing:.18em;text-transform:uppercase;color:var(--text2);text-decoration:none;transition:color .25s;font-weight:300;}
-.footer-links a:hover{color:var(--gold);}
-
-/* REVEAL */
-.reveal{opacity:0;transform:translateY(20px);transition:opacity .75s ease,transform .75s ease;}
-.reveal.visible{opacity:1;transform:translateY(0);}
-.reveal-d1{transition-delay:.12s;}.reveal-d2{transition-delay:.24s;}.reveal-d3{transition-delay:.36s;}
-
-@keyframes fadeUp{from{opacity:0;transform:translateY(22px)}to{opacity:1;transform:translateY(0)}}
-@keyframes fadeIn{from{opacity:0}to{opacity:1}}
-@keyframes glow{0%,100%{box-shadow:0 0 6px currentColor}50%{box-shadow:0 0 12px currentColor}}
-
-@media(max-width:1024px){
-  .hero-inner,.about-wrap,.ai-wrap,.contact-wrap{grid-template-columns:1fr;}
-  .ventures-wrap,.services-wrap,.projects-wrap{grid-template-columns:1fr;}
-  nav,#hero,.section-inner,footer{padding-left:24px;padding-right:24px;}
-  .hero-bg-text{display:none;}
-  .hero-vline{display:none;}
-  .hero-name{font-size:52px;}
-  footer{flex-direction:column;gap:18px;text-align:center;padding:36px 24px;}
-  footer::before{left:24px;right:24px;}
-  .form-row{grid-template-columns:1fr;}
-}
-</style>
-
-<!-- JSON-LD Structured Data -->
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "Person",
-  "name": "Hiruni Weerawansha",
-  "jobTitle": "Entrepreneur & Co-Founder",
-  "url": "https://hiruniweerawansha.com",
-  "sameAs": [
-    "https://www.linkedin.com/in/hiruni",
-    "https://twitter.com/hiruni",
-    "https://www.instagram.com/hiruni"
-  ],
-  "image": "https://hiruniweerawansha.com/icons/icon-128x128.png",
-  "description": "Hiruni Weerawansha - Entrepreneur, co-founder, and innovator. Building ventures and leading successful business initiatives with a focus on strategic growth and impact.",
-  "knowsLanguage": "en"
-}
-</script>
-
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "Organization",
-  "name": "Hiruni Weerawansha",
-  "url": "https://hiruniweerawansha.com",
-  "logo": "https://hiruniweerawansha.com/icons/icon-128x128.png",
-  "description": "Portfolio and ventures by Hiruni Weerawansha, an entrepreneur and co-founder focused on strategic growth and business innovation.",
-  "sameAs": [
-    "https://www.linkedin.com/in/hiruni",
-    "https://twitter.com/hiruni",
-    "https://www.instagram.com/hiruni"
-  ]
-}
-</script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hiruni Weerawansha | Business, Marketing & Entrepreneurship</title>
+  <meta name="description" content="Meet Hiruni Weerawansha, a Business Management undergraduate at Sabaragamuwa University of Sri Lanka with experience in digital marketing, entrepreneurship, and university leadership.">
+  <meta name="theme-color" content="#f6f3ed">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Hiruni Weerawansha | Business, Marketing & Entrepreneurship">
+  <meta property="og:description" content="Building ideas into meaningful work through business, creativity, and innovation. Explore my experience, ventures, and community initiatives.">
+  <meta property="og:url" content="https://imhiru.netlify.app/">
+  <link rel="canonical" href="https://imhiru.netlify.app/">
+  <link rel="icon" href="favicon.ico">
+  <link rel="apple-touch-icon" href="icons/icon-128x128.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;450;500;550;600;650;700&family=Libre+Caslon+Display&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
 </head>
 <body>
-<div class="cur" id="cur"></div>
-<div class="cur-ring" id="curRing"></div>
-
-<nav>
-  <a href="#hero" class="nav-logo">Hiruni <em>Weerawansha</em></a>
-  <div class="nav-links">
-    <a href="#about">About</a>
-    <a href="#ventures">Ventures</a>
-    <a href="#services">Services</a>
-    <a href="#projects">Projects</a>
-    <a href="#ai-section">AI</a>
-  </div>
-  <a href="#contact" class="nav-cta">Contact</a>
-</nav>
-
-<!-- HERO -->
-<section id="hero">
-  <div class="hero-bg-text">HW</div>
-  <div class="hero-vline"></div>
-  <div class="hero-inner">
-    <div>
-      <p class="hero-kicker">Co-Founder · DocxDeveloper Pvt. Ltd · Colombo, Sri Lanka</p>
-      <h1 class="hero-name">
-        <span class="first">Hiruni</span>
-        <span class="last">Weerawansha</span>
-      </h1>
-      <div class="hero-divider"></div>
-      <div class="hero-roles">
-        <span class="role-tag">🚀 Entrepreneur</span>
-        <span class="role-tag">🎯 Career Guider</span>
-        <span class="role-tag">✍️ Content Creator</span>
-        <span class="role-tag">🎓 BSc Business Mgmt</span>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="header">
+    <div class="container nav-wrap">
+      <a class="wordmark" href="#home" aria-label="Hiruni Weerawansha, home">hw<span>.</span></a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="navigation">Menu <span aria-hidden="true">+</span></button>
+      <nav id="navigation" aria-label="Main navigation">
+        <a href="#about">About</a><a href="#experience">Experience</a><a href="#projects">Selected work</a><a href="#ventures">Ventures</a><a class="nav-contact" href="#contact">Contact <span aria-hidden="true">↗</span></a>
+      </nav>
+    </div>
+  </header>
+  <main id="main">
+    <section class="hero container" id="home" aria-labelledby="hero-title">
+      <div class="hero-top"><span class="eyebrow">Business · Creativity · Innovation</span><span class="hero-location">Colombo, Sri Lanka</span></div>
+      <h1 id="hero-title">Hiruni<br> <span>Weerawansha<span class="name-period">.</span></span></h1>
+      <div class="hero-bottom">
+        <div><p class="hero-statement">Building ideas into<br> <em>meaningful work.</em></p><a class="text-link" href="#about">Explore my journey <span aria-hidden="true">↓</span></a></div>
+        <div class="hero-intro"><p class="role">Business Management Undergraduate<br> Digital Marketing · Entrepreneurship · Leadership</p><p>I’m a Business Management undergraduate at Sabaragamuwa University of Sri Lanka, with experience in digital marketing, entrepreneurial initiatives, technology-driven solutions, and university leadership.</p><a class="button" href="#projects">View my work <span aria-hidden="true">↗</span></a></div>
       </div>
-      <p class="hero-bio">
-        Building the future through <strong>DocxDeveloper Pvt. Ltd</strong>, <strong>DocxDesigner</strong> &amp; <strong>Hiru's Studio</strong> — empowering individuals with career clarity, compelling content, and bold entrepreneurial vision.
-      </p>
-      <div class="hero-ctas">
-        <a href="#ventures" class="btn-gold">Explore My Work</a>
-        <a href="#contact" class="btn-outline">Work With Me</a>
-      </div>
-    </div>
-    <div class="hero-card">
-      <div class="hc-crown">HW</div>
-      <div class="hc-label">Executive Profile</div>
-      <div class="hc-grid">
-        <div class="hc-stat"><span class="hc-num">3</span><span class="hc-lbl">Businesses</span></div>
-        <div class="hc-stat"><span class="hc-num">200+</span><span class="hc-lbl">Careers</span></div>
-        <div class="hc-stat"><span class="hc-num">5+</span><span class="hc-lbl">Years</span></div>
-        <div class="hc-stat"><span class="hc-num">50+</span><span class="hc-lbl">Projects</span></div>
-      </div>
-      <div class="hc-sep"></div>
-      <div class="hc-avail"><span class="hc-dot"></span>Available for collaborations &amp; consulting</div>
-    </div>
-  </div>
-</section>
+    </section>
 
-<!-- MARQUEE -->
-<div class="marquee-wrap">
-  <div class="marquee-track">
-    <span class="marquee-item">DocxDeveloper Pvt. Ltd</span>
-    <span class="marquee-item">Career Guidance</span>
-    <span class="marquee-item">DocxDesigner</span>
-    <span class="marquee-item">Content Creation</span>
-    <span class="marquee-item">Hiru's Studio</span>
-    <span class="marquee-item">Business Consulting</span>
-    <span class="marquee-item">Tech Solutions</span>
-    <span class="marquee-item">CV Design</span>
-    <span class="marquee-item">Fashion Store</span>
-    <span class="marquee-item">Workshops &amp; Training</span>
-    <span class="marquee-item">DocxDeveloper Pvt. Ltd</span>
-    <span class="marquee-item">Career Guidance</span>
-    <span class="marquee-item">DocxDesigner</span>
-    <span class="marquee-item">Content Creation</span>
-    <span class="marquee-item">Hiru's Studio</span>
-    <span class="marquee-item">Business Consulting</span>
-    <span class="marquee-item">Tech Solutions</span>
-    <span class="marquee-item">CV Design</span>
-    <span class="marquee-item">Fashion Store</span>
-    <span class="marquee-item">Workshops &amp; Training</span>
-  </div>
-</div>
+    <section class="profile-band" aria-labelledby="profile-title">
+      <div class="container"><h2 class="eyebrow" id="profile-title">My professional profile</h2><div class="profile-grid">
+        <div><h3>Business Management<br> Undergraduate</h3><p>Building a strong foundation in business and management.</p></div>
+        <div><h3>Digital Marketing<br> Experience</h3><p>Practical exposure to campaigns, content, and brand communication.</p></div>
+        <div><h3>Co-Founder,<br> DocxDeveloper Pvt. Ltd.</h3><p>General Manager &amp; Head of Finance, contributing to technology-driven entrepreneurial initiatives.</p></div>
+        <div><h3>University Leadership<br> &amp; Engagement</h3><p>Participating in student leadership and community projects.</p></div>
+      </div></div>
+    </section>
 
-<!-- ABOUT -->
-<section id="about">
-  <div class="section-inner">
-    <div class="reveal">
-      <p class="sec-kicker">About Me</p>
-      <h2 class="sec-title">The <em>Vision</em> &amp;<br>The Mission</h2>
-    </div>
-    <div class="about-wrap">
-      <div class="reveal">
-        <div class="about-panel">
-          <div class="ap-top">
-            <div class="ap-monogram">HW</div>
-            <div class="ap-initials">H · W</div>
-            <div class="ap-name">Hiruni Weerawansha</div>
-            <div class="ap-rule"></div>
-          </div>
-          <div class="ap-stats">
-            <div class="ap-stat"><span class="ap-stat-num">200+</span><span class="ap-stat-lbl">Careers Guided</span></div>
-            <div class="ap-stat"><span class="ap-stat-num">3</span><span class="ap-stat-lbl">Ventures</span></div>
-            <div class="ap-stat"><span class="ap-stat-num">5+</span><span class="ap-stat-lbl">Years Active</span></div>
-            <div class="ap-stat"><span class="ap-stat-num">50+</span><span class="ap-stat-lbl">Projects</span></div>
-          </div>
-        </div>
+    <section class="section container split-section" id="about">
+      <div class="section-heading"><p class="eyebrow">01 / About me</p><h2>Curiosity meets<br> <em>initiative.</em></h2></div>
+      <div class="about-copy"><p class="lead">I’m Hiruni Weerawansha, a Business Management undergraduate with a growing interest in marketing, entrepreneurship, business strategy, and innovation.</p><p>My journey combines academic learning with practical experience in digital marketing, venture development, and community engagement. Through my marketing experience at Fadna Life Science, my role as General Manager, Head of Finance &amp; Co-Founder of DocxDeveloper Pvt. Ltd., and university leadership initiatives, I’ve gained exposure to different aspects of business and teamwork.</p><p>I believe in learning by doing, taking initiative, and turning ideas into practical solutions. I’m continuously developing my skills and exploring opportunities that connect business knowledge with creativity, technology, and real-world impact.</p></div>
+    </section>
+
+    <section class="section container split-section ruled" id="education">
+      <div class="section-heading"><p class="eyebrow">02 / Education</p><h2>A foundation<br> for <em>what’s next.</em></h2></div>
+      <div><span class="status">Currently pursuing</span><h3 class="large-heading">Sabaragamuwa University<br> of Sri Lanka</h3><p class="qualification">Business Management — Undergraduate</p><p>Faculty of Management Studies</p><h4 class="small-heading">Academic focus areas</h4><ul class="focus-list"><li>Marketing and Business Management</li><li>Managerial Economics</li><li>Advanced Financial Reporting</li><li>Operations Research</li><li>Management Information Systems</li><li>Venture Creation</li><li>Creativity and Innovation</li></ul></div>
+    </section>
+
+    <section class="experience-section" id="experience">
+      <div class="container section split-section"><div class="section-heading"><p class="eyebrow">03 / Professional experience</p><h2>Learning through<br> <em>real work.</em></h2></div>
+        <article><p class="eyebrow">Full-time · On-site · 1 yr 1 mo</p><h3 class="large-heading">Fadna</h3>
+          <p class="employment-location">Pannipitiya, Colombo District, Western Province, Sri Lanka</p>
+          <ol class="career-timeline" aria-label="Roles at Fadna">
+            <li><h4>Junior Marketing Executive</h4><p><time datetime="2026-01">Jan 2026</time> — <time datetime="2026-07">Jul 2026</time><span>7 mos</span></p></li>
+            <li><h4>Junior Digital Marketing Executive</h4><p><time datetime="2025-07">Jul 2025</time> — <time datetime="2025-12">Dec 2025</time><span>6 mos</span></p></li>
+          </ol>
+          <p class="lead">Practical exposure to digital marketing, promotional campaigns, and online brand communication.</p><h4 class="small-heading">Key responsibilities</h4><ul class="responsibilities"><li>Supported social media management and content planning.</li><li>Worked with Meta Business Suite and gained exposure to Google Ads.</li><li>Assisted with digital campaign execution and performance monitoring.</li><li>Coordinated product promotions, influencer-related activities, and customer engagement.</li><li>Supported e-commerce product listings and online promotional activities.</li></ul><p class="focus-line">Digital Marketing / Content Strategy / Campaign Coordination / Brand Communication</p></article>
       </div>
-      <div class="about-content reveal reveal-d2">
-        <p>I'm <strong>Hiruni Weerawansha</strong> — an entrepreneur, career coach, and content creator based in Colombo, Sri Lanka. As Co-Founder of <strong>DocxDeveloper Pvt. Ltd</strong>, I lead a technology-supportive company delivering document solutions and tech support services to businesses across Sri Lanka and beyond.</p>
-        <p>My philosophy is rooted in one belief: clarity of purpose is the most powerful business tool. Whether launching a venture, mentoring someone through a career transition, or crafting content that elevates a brand — I bring strategy, precision, and genuine care to everything I do.</p>
-        <p>Alongside my corporate leadership, I independently run <strong>DocxDesigner</strong> — a specialist CV and document design service — and <strong>Hiru's Studio</strong>, a curated fashion store. Each venture is an expression of a different dimension of my entrepreneurial identity.</p>
-        <div class="edu-block">
-          <span class="edu-tag">Education</span>
-          <div class="edu-degree">Bachelor of Business Management</div>
-          <div class="edu-detail">Business Administration &amp; Management · Currently Pursuing</div>
-          <span class="edu-pill">◐ In Progress</span>
-        </div>
-        <div class="about-list">
-          <div class="al-item"><span class="al-num">01</span><div class="al-body"><h4>DocxDeveloper Pvt. Ltd</h4><p>Tech-supportive company — IT support, document automation &amp; business technology solutions.</p></div></div>
-          <div class="al-item"><span class="al-num">02</span><div class="al-body"><h4>DocxDesigner</h4><p>Professional CV design, document templates &amp; business documentation services.</p></div></div>
-          <div class="al-item"><span class="al-num">03</span><div class="al-body"><h4>Hiru's Studio</h4><p>A curated fashion store delivering style and quality to modern Sri Lankan shoppers.</p></div></div>
-        </div>
+    </section>
+
+    <section class="section container" id="projects">
+      <div class="section-title-row"><div class="section-heading"><p class="eyebrow">04 / Selected projects &amp; initiatives</p><h2>Ideas in <em>practice.</em></h2></div><p class="section-aside">Digital solutions, brand communication,<br> and community participation.</p></div>
+      <div class="project-list">
+        <article class="project"><div class="project-index">01</div><div class="project-title"><p class="eyebrow">Digital solutions</p><h3>OneAttend</h3></div><div class="project-copy"><p>A digital attendance management solution designed for settings such as gyms and tuition classes, with attendance records, SMS notifications, reporting, and fee-status tracking.</p><p class="focus-line">Digital Solutions · Product Development · Business Applications</p></div></article>
+        <article class="project"><div class="project-index">02</div><div class="project-title"><p class="eyebrow">Brand communication</p><h3>Digital Marketing<br> &amp; Brand Promotion</h3></div><div class="project-copy"><p>Practical experience supporting social media content, product promotions, campaign coordination, and e-commerce activities.</p><p class="focus-line">Digital Marketing · Content Planning · Brand Communication</p></div></article>
+        <article class="project"><div class="project-index">03</div><div class="project-title"><p class="eyebrow">Community engagement</p><h3>University &amp;<br> Community Initiatives</h3></div><div class="project-copy"><p>Participation in student leadership, community engagement, fundraising, and event coordination through university-based organizations and projects.</p><p class="focus-line">Project Coordination · Leadership · Teamwork</p></div></article>
       </div>
-    </div>
-  </div>
-</section>
+    </section>
 
-<!-- VENTURES -->
-<section id="ventures">
-  <div class="section-inner">
-    <div class="reveal">
-      <p class="sec-kicker">My Ventures</p>
-      <h2 class="sec-title">Businesses I <em>Built</em></h2>
-      <p class="sec-sub">Three active ventures spanning technology, document design, and fashion — each built from purpose and passion.</p>
-    </div>
-    <div class="ventures-wrap">
-      <div class="vc reveal">
-        <span class="vc-badge">Co-Founder · Main Company</span>
-        <span class="vc-icon">💻</span>
-        <span class="vc-num">01</span>
-        <div class="vc-title">DocxDeveloper Pvt. Ltd</div>
-        <div class="vc-sub">Tech Solutions &amp; IT Support</div>
-        <p class="vc-desc">A technology-supportive company delivering comprehensive IT support, document automation, and business technology services. Helping organisations operate smarter through reliable, tailored tech solutions and strategic consulting.</p>
-        <div class="vc-tags"><span class="vc-tag">Tech Support</span><span class="vc-tag">Doc Automation</span><span class="vc-tag">IT Solutions</span><span class="vc-tag">Consulting</span></div>
-        <a href="https://docxdeveloper.com" target="_blank" rel="noopener noreferrer" class="btn-outline" style="margin-top: 20px; display: inline-block;">Visit Website</a>
-      </div>
-      <div class="vc reveal reveal-d1">
-        <span class="vc-badge">Small Business · Owner</span>
-        <span class="vc-icon">📄</span>
-        <span class="vc-num">02</span>
-        <div class="vc-title">DocxDesigner</div>
-        <div class="vc-sub">Document Design &amp; CV Services</div>
-        <p class="vc-desc">A specialist service for professional document creation — polished CV templates, branded business documentation, and custom design work that helps individuals and companies make a powerful, lasting impression.</p>
-        <div class="vc-tags"><span class="vc-tag">CV Making</span><span class="vc-tag">Doc Design</span><span class="vc-tag">Templates</span><span class="vc-tag">Branding</span></div>
-        <a href="https://design.docxdeveloper.com" target="_blank" rel="noopener noreferrer" class="btn-outline" style="margin-top: 20px; display: inline-block;">Visit Website</a>
-      </div>
-      <div class="vc reveal reveal-d2">
-        <span class="vc-badge">Small Business · Owner</span>
-        <span class="vc-icon">👗</span>
-        <span class="vc-num">03</span>
-        <div class="vc-title">Hiru's Studio</div>
-        <div class="vc-sub">Fashion Store</div>
-        <p class="vc-desc">A curated fashion store bringing style, quality, and personality to modern Sri Lankan shoppers — built on the conviction that great fashion should be accessible, expressive, and uniquely personal to every individual.</p>
-        <div class="vc-tags"><span class="vc-tag">Fashion</span><span class="vc-tag">Retail</span><span class="vc-tag">Lifestyle</span><span class="vc-tag">Sri Lanka</span></div>
-      </div>
-    </div>
-  </div>
-</section>
+    <section class="ventures-section" id="ventures"><div class="section container">
+      <div class="section-heading"><p class="eyebrow">05 / Ventures &amp; entrepreneurial initiatives</p><h2>A business mindset.<br> <em>A builder’s spirit.</em></h2></div>
+      <div class="ventures-grid"><article><p class="eyebrow">Self-employed · Hybrid</p><h3>DocxDeveloper</h3><p class="venture-role">General Manager &amp; Head of Finance &amp; Co-Founder</p><div class="venture-tenure"><p><time datetime="2024-07">Jul 2024</time> — Present</p><p>Kalutara District, Western Province, Sri Lanka</p></div><p>A technology-focused venture working on practical digital solutions for businesses and organizations.</p><p>My involvement spans business development, product concepts, service development, and organizational growth.</p><a class="text-link" href="https://docxdeveloper.com" target="_blank" rel="noopener noreferrer">Visit DocxDeveloper <span aria-hidden="true">↗</span><span class="sr-only"> (opens in a new tab)</span></a></article>
+      <article><p class="eyebrow">CV &amp; professional document services</p><h3>DocxDesigner</h3><p>A service initiative creating professional CVs and documents to help individuals present their qualifications and experience effectively.</p><a class="text-link" href="https://design.docxdeveloper.com" target="_blank" rel="noopener noreferrer">Visit DocxDesigner <span aria-hidden="true">↗</span><span class="sr-only"> (opens in a new tab)</span></a></article></div>
+      <div class="secondary-venture"><div><span class="eyebrow">Creative venture</span><h3>Hiru’s Studio</h3></div><p>A creative initiative associated with content, design, and digital branding.</p></div>
+    </div></section>
 
-<!-- SERVICES -->
-<section id="services">
-  <div class="section-inner">
-    <div class="reveal">
-      <p class="sec-kicker">Services</p>
-      <h2 class="sec-title">What I Can <em>Do</em><br>For You</h2>
-      <p class="sec-sub">Transformative professional services spanning career coaching, content, tech, document design, and business strategy.</p>
-    </div>
-    <div class="services-wrap">
-      <div class="svc reveal"><span class="svc-num">[ 01 ]</span><span class="svc-icon">🎯</span><h3 class="svc-title">Career Guidance &amp; Coaching</h3><p class="svc-desc">One-on-one sessions to map your career path, build a standout resume, prepare for interviews, and step confidently into your dream role with clarity and purpose.</p><div class="svc-tags"><span class="svc-tag">Resume Review</span><span class="svc-tag">Interview Prep</span><span class="svc-tag">Career Planning</span><span class="svc-tag">LinkedIn</span></div></div>
-      <div class="svc reveal reveal-d1"><span class="svc-num">[ 02 ]</span><span class="svc-icon">✍️</span><h3 class="svc-title">Content Creation &amp; Strategy</h3><p class="svc-desc">High-impact content crafted to build your personal brand, grow your audience, and position you as a trusted authority in your field.</p><div class="svc-tags"><span class="svc-tag">Social Media</span><span class="svc-tag">Brand Story</span><span class="svc-tag">Blog Writing</span><span class="svc-tag">Strategy</span></div></div>
-      <div class="svc reveal reveal-d2"><span class="svc-num">[ 03 ]</span><span class="svc-icon">💻</span><h3 class="svc-title">Tech Support &amp; Solutions</h3><p class="svc-desc">Via DocxDeveloper Pvt. Ltd — reliable IT support, document automation, and business technology consulting to keep your operations running at peak efficiency.</p><div class="svc-tags"><span class="svc-tag">IT Support</span><span class="svc-tag">Doc Automation</span><span class="svc-tag">Tech Consulting</span></div></div>
-      <div class="svc reveal"><span class="svc-num">[ 04 ]</span><span class="svc-icon">📄</span><h3 class="svc-title">Document &amp; CV Design</h3><p class="svc-desc">Professional CV creation and document template design through DocxDesigner — making every client look exceptional on paper and in every professional interaction.</p><div class="svc-tags"><span class="svc-tag">CV Design</span><span class="svc-tag">Templates</span><span class="svc-tag">Business Docs</span><span class="svc-tag">PDF</span></div></div>
-      <div class="svc reveal reveal-d1"><span class="svc-num">[ 05 ]</span><span class="svc-icon">🧠</span><h3 class="svc-title">Business Consulting</h3><p class="svc-desc">Leverage my multi-business experience to validate ideas, structure business models, and build ventures that are both resilient and built to scale.</p><div class="svc-tags"><span class="svc-tag">Strategy</span><span class="svc-tag">Brand Building</span><span class="svc-tag">Growth</span><span class="svc-tag">Startup</span></div></div>
-      <div class="svc reveal reveal-d2"><span class="svc-num">[ 06 ]</span><span class="svc-icon">🎓</span><h3 class="svc-title">Workshops &amp; Training</h3><p class="svc-desc">Bespoke group sessions and corporate training on entrepreneurship, career development, and professional growth — tailored for teams and institutions.</p><div class="svc-tags"><span class="svc-tag">Webinars</span><span class="svc-tag">Corporate</span><span class="svc-tag">Group Coaching</span><span class="svc-tag">Keynotes</span></div></div>
-    </div>
-  </div>
-</section>
+    <section class="section container split-section" id="leadership"><div class="section-heading"><p class="eyebrow">06 / Leadership &amp; community</p><h2>Growing with<br> <em>others.</em></h2><p class="heading-note">Leadership · Project Coordination · Community Engagement · Communication · Teamwork</p></div>
+      <div class="leadership-list"><article><span class="date">2025/26</span><h3>G17 University Ambassador</h3><p class="institution">Sabaragamuwa University of Sri Lanka</p><p>Representing the G17 University Ambassador initiative with a focus on Sustainable Development Goal 5: Gender Equality.</p></article><article><h3>Rotaract Club</h3><p class="institution">Sabaragamuwa University of Sri Lanka</p><p>Contributed to university-based community service, project coordination, fundraising, and event-related activities.</p></article><article><h3>Future Focus</h3><p class="institution">Turning Chalkboards into Vision Boards</p><p>Participated in a youth-focused initiative encouraging students to explore their aspirations and future opportunities.</p></article><article><h3>Project Sipsewana</h3><p>Contributed to a community initiative focused on improving sanitary facilities.</p></article></div>
+    </section>
 
-<!-- PROJECTS -->
-<section id="projects">
-  <div class="section-inner">
-    <div class="reveal">
-      <p class="sec-kicker">Projects</p>
-      <h2 class="sec-title">Work That <em>Defines</em> Me</h2>
-      <p class="sec-sub">Active initiatives and ventures that represent my entrepreneurial journey and real-world impact.</p>
-    </div>
-    <div class="projects-wrap">
-      <div class="proj reveal"><div class="proj-top"><div><span class="proj-num">Project 001</span><h3 class="proj-title">DocxDeveloper Pvt. Ltd</h3></div><span class="proj-badge live">● Live</span></div><div class="proj-body"><p class="proj-desc">Co-founded and actively leading a tech-supportive company offering IT support, document automation, and business technology services to clients across Sri Lanka.</p><div class="proj-stack"><span class="stack-tag">Tech Solutions</span><span class="stack-tag">IT Support</span><span class="stack-tag">Document Tech</span></div></div></div>
-      <div class="proj reveal reveal-d1"><div class="proj-top"><div><span class="proj-num">Project 002</span><h3 class="proj-title">DocxDesigner</h3></div><span class="proj-badge live">● Live</span></div><div class="proj-body"><p class="proj-desc">A specialist CV and document design service helping professionals and businesses create compelling, high-quality documents that make a lasting impression.</p><div class="proj-stack"><span class="stack-tag">CV Design</span><span class="stack-tag">Templates</span><span class="stack-tag">Documentation</span></div></div></div>
-      <div class="proj reveal"><div class="proj-top"><div><span class="proj-num">Project 003</span><h3 class="proj-title">Hiru's Studio</h3></div><span class="proj-badge live">● Live</span></div><div class="proj-body"><p class="proj-desc">A fashion retail business offering curated clothing and accessories — built on a passion for style and quality, accessible to modern Sri Lankan customers.</p><div class="proj-stack"><span class="stack-tag">Fashion</span><span class="stack-tag">Retail</span><span class="stack-tag">E-Commerce</span></div></div></div>
-      <div class="proj reveal reveal-d1"><div class="proj-top"><div><span class="proj-num">Project 004</span><h3 class="proj-title">Career Accelerator Program</h3></div><span class="proj-badge grow">◐ Growing</span></div><div class="proj-body"><p class="proj-desc">A structured career coaching initiative guiding 200+ professionals through career pivots, resume rebuilds, interview mastery, and securing competitive roles.</p><div class="proj-stack"><span class="stack-tag">Coaching</span><span class="stack-tag">Career Dev</span><span class="stack-tag">Mentorship</span></div></div></div>
-    </div>
-  </div>
-</section>
+    <section class="section container ruled" id="skills"><div class="section-heading"><p class="eyebrow">07 / Skills &amp; competencies</p><h2>What I bring<br> <em>to the table.</em></h2></div><div class="skills-grid">
+      <div><span class="skill-index">01</span><h3>Digital Marketing</h3><ul><li>Social Media Management</li><li>Content Planning</li><li>Digital Campaign Coordination</li><li>Brand Communication</li><li>E-commerce Support</li></ul></div>
+      <div><span class="skill-index">02</span><h3>Business &amp;<br> Entrepreneurship</h3><ul><li>Business Development</li><li>Entrepreneurial Thinking</li><li>Business Planning</li><li>Market Research</li><li>Strategic Thinking</li></ul></div>
+      <div><span class="skill-index">03</span><h3>Leadership &amp;<br> Management</h3><ul><li>Project Coordination</li><li>Event Coordination</li><li>Team Collaboration</li><li>Communication</li><li>Problem-Solving</li></ul></div>
+      <div><span class="skill-index">04</span><h3>Tools &amp; Technology</h3><ul><li>Meta Business Suite</li><li>Google Ads <span class="muted">— practical exposure</span></li><li>Microsoft Word</li><li>Microsoft PowerPoint</li><li>Microsoft Excel</li><li>Digital Business Solutions</li></ul></div>
+    </div></section>
 
-<!-- AI CHAT -->
-<section id="ai-section">
-  <div class="section-inner">
-    <div class="reveal">
-      <p class="sec-kicker">AI Powered</p>
-      <h2 class="sec-title">Chat With <em>My AI</em></h2>
-      <p class="sec-sub">Ask anything about my ventures, services, or expertise — powered by real Claude AI, available 24/7.</p>
-    </div>
-    <div class="ai-wrap">
-      <div class="reveal">
-        <h3>Your Personal AI Concierge</h3>
-        <p>A real AI assistant built on my background, businesses, and services. Ask anything — it responds instantly with precision and warmth, any time of day.</p>
-        <p>Try asking about my career coaching services, DocxDeveloper, DocxDesigner, or Hiru's Studio.</p>
-        <div class="ai-feats">
-          <div class="ai-feat"><span class="ai-feat-icon">⚡</span><span class="ai-feat-text">Instant answers about all 3 businesses &amp; services</span></div>
-          <div class="ai-feat"><span class="ai-feat-icon">🎯</span><span class="ai-feat-text">Career advice &amp; professional guidance on demand</span></div>
-          <div class="ai-feat"><span class="ai-feat-icon">🤝</span><span class="ai-feat-text">Matches you with the right service for your needs</span></div>
-          <div class="ai-feat"><span class="ai-feat-icon">🔒</span><span class="ai-feat-text">Powered by Claude AI — private &amp; intelligent</span></div>
-        </div>
-      </div>
-      <div class="reveal reveal-d2">
-        <div class="chat-box">
-          <div class="chat-header">
-            <div class="chat-av">🤖</div>
-            <div>
-              <div class="chat-name">Hiruni AI Assistant</div>
-              <div class="chat-online">Online · Claude AI</div>
-            </div>
-          </div>
-          <div class="quick-qs">
-            <button class="qq" onclick="sendQuick(this)">What does DocxDeveloper do?</button>
-            <button class="qq" onclick="sendQuick(this)">Tell me about DocxDesigner</button>
-            <button class="qq" onclick="sendQuick(this)">Guide my career</button>
-          </div>
-          <div class="chat-msgs" id="chatMessages">
-            <div class="msg bot">Good day! I'm Hiruni's AI assistant. Ask me about her businesses, services, or how she can help you achieve your goals.</div>
-          </div>
-          <div class="chat-input-area">
-            <input class="chat-input" id="chatInput" placeholder="Ask me anything..." onkeydown="if(event.key==='Enter')sendChat()">
-            <button class="chat-send" onclick="sendChat()">Send</button>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- CONTACT -->
-<section id="contact">
-  <div class="section-inner">
-    <div class="reveal">
-      <p class="sec-kicker">Contact</p>
-      <h2 class="sec-title">Let's Create<br><em>Something Great</em></h2>
-    </div>
-    <div class="contact-wrap">
-      <div class="contact-left reveal">
-        <p>Ready to collaborate? Whether it's a career query, business partnership, or a service inquiry — I'd love to hear from you and explore how we can work together.</p>
-        <div class="cc-list">
-          <div class="cc"><span class="cc-icon">📍</span><div><div class="cc-lbl">Location</div><div class="cc-val">Colombo, Sri Lanka</div></div></div>
-          <div class="cc"><span class="cc-icon">🏢</span><div><div class="cc-lbl">Main Company</div><div class="cc-val">DocxDeveloper Pvt. Ltd</div></div></div>
-          <div class="cc"><span class="cc-icon">📄</span><div><div class="cc-lbl">Design Studio</div><div class="cc-val">DocxDesigner</div></div></div>
-          <div class="cc"><span class="cc-icon">👗</span><div><div class="cc-lbl">Fashion Store</div><div class="cc-val">Hiru's Studio</div></div></div>
-          <div class="cc"><span class="cc-icon">📧</span><div><div class="cc-lbl">Email</div><div class="cc-val"><a href="mailto:hiruni@docxdeveloper.com">hiruni@docxdeveloper.com</a></div></div></div>
-          <div class="cc"><span class="cc-icon">💼</span><div><div class="cc-lbl">LinkedIn</div><div class="cc-val"><a href="#">linkedin.com/in/hiruniweerawansha</a></div></div></div>
-          <div class="cc"><span class="cc-icon">⏰</span><div><div class="cc-lbl">Response Time</div><div class="cc-val">Within 24 Hours</div></div></div>
-        </div>
-      </div>
-      <div class="contact-form reveal reveal-d2">
-        <div class="form-row">
-          <div class="form-group"><label class="form-lbl">Your Name</label><input class="form-input" id="fname" placeholder="Full name"></div>
-          <div class="form-group"><label class="form-lbl">Email Address</label><input class="form-input" id="femail" type="email" placeholder="your@email.com"></div>
-        </div>
-        <div class="form-group"><label class="form-lbl">Service / Inquiry</label>
-          <select class="form-select" id="fservice">
-            <option value="">Select an inquiry type...</option>
-            <option>Career Guidance &amp; Coaching</option>
-            <option>Content Creation &amp; Strategy</option>
-            <option>DocxDeveloper — Tech Solutions</option>
-            <option>DocxDesigner — CV &amp; Document Design</option>
-            <option>Hiru's Studio — Fashion</option>
-            <option>Business Consulting</option>
-            <option>Workshops &amp; Training</option>
-            <option>General Inquiry</option>
-          </select>
-        </div>
-        <div class="form-group"><label class="form-lbl">Your Message</label><textarea class="form-textarea" id="fmsg" placeholder="Tell me about your goals or what you need help with..."></textarea></div>
-        <button class="form-submit" onclick="submitForm()">Send Message →</button>
-        <div class="form-success" id="formSuccess">✔ Message received — Hiruni will reply within 24 hours.</div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<footer>
-  <div class="footer-logo">Hiruni Weerawansha</div>
-  <div class="footer-copy">© 2026 · DocxDeveloper Pvt. Ltd · DocxDesigner · Hiru's Studio · All Rights Reserved</div>
-  <div class="footer-links"><a href="#about">About</a><a href="#ventures">Ventures</a><a href="#services">Services</a><a href="#contact">Contact</a></div>
-</footer>
-
-<script>
-const cur=document.getElementById("cur"),curRing=document.getElementById("curRing");
-document.addEventListener("mousemove",e=>{cur.style.left=e.clientX+"px";cur.style.top=e.clientY+"px";curRing.style.left=e.clientX+"px";curRing.style.top=e.clientY+"px";});
-document.querySelectorAll("a,button,.vc,.svc,.proj,.cc,.ai-feat,.role-tag").forEach(el=>{
-  el.addEventListener("mouseenter",()=>{curRing.style.width="48px";curRing.style.height="48px";});
-  el.addEventListener("mouseleave",()=>{curRing.style.width="28px";curRing.style.height="28px";});
-});
-const obs=new IntersectionObserver(es=>{es.forEach(e=>{if(e.isIntersecting)e.target.classList.add("visible");});},{threshold:.1});
-document.querySelectorAll(".reveal").forEach(el=>obs.observe(el));
-
-const SYSTEM=`You are a sophisticated AI assistant for Hiruni Weerawansha, a Sri Lankan entrepreneur based in Colombo.
-- Co-Founder of DocxDeveloper Pvt. Ltd: tech-supportive company — IT support, document automation, business tech solutions
-- Owner of DocxDesigner: CV design, document templates, professional documentation services
-- Owner of Hiru's Studio: curated fashion store
-- Career Guidance Coach: helped 200+ professionals with resumes, interview prep, career planning, LinkedIn
-- Content Creator: personal branding, social media, brand storytelling
-- Pursuing Bachelor of Business Management
-Services: Career Guidance, Content Creation, Tech Support, CV/Doc Design, Business Consulting, Workshops
-Contact: hiruni@docxdeveloper.com | Colombo, Sri Lanka
-Respond with sophistication and warmth. Keep replies concise — 2-3 sentences max. Direct to contact form for bookings.`;
-
-let history=[];
-async function callAI(msg){
-  const msgs=[...history,{role:"user",content:msg}];
-  const res=await fetch("https://api.anthropic.com/v1/messages",{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify({model:"claude-sonnet-4-20250514",max_tokens:1000,system:SYSTEM,messages:msgs})});
-  const d=await res.json();return d.content?.[0]?.text||"I apologise — please try again.";
-}
-async function sendChat(){
-  const inp=document.getElementById("chatInput");const msg=inp.value.trim();if(!msg)return;
-  inp.value="";addMsg(msg,"user");const t=addTyping();
-  try{const reply=await callAI(msg);history.push({role:"user",content:msg},{role:"assistant",content:reply});t.remove();addMsg(reply,"bot");}
-  catch(e){t.remove();addMsg("Connection issue. Please try again.","bot");}
-}
-function sendQuick(btn){document.getElementById("chatInput").value=btn.textContent;sendChat();}
-function addMsg(text,type){const box=document.getElementById("chatMessages");const d=document.createElement("div");d.className="msg "+type;d.textContent=text;box.appendChild(d);box.scrollTop=box.scrollHeight;return d;}
-function addTyping(){const box=document.getElementById("chatMessages");const d=document.createElement("div");d.className="msg bot";d.innerHTML='<span class="typing-dot"></span><span class="typing-dot"></span><span class="typing-dot"></span>';box.appendChild(d);box.scrollTop=box.scrollHeight;return d;}
-function submitForm(){
-  const n=document.getElementById("fname").value.trim(),e=document.getElementById("femail").value.trim(),m=document.getElementById("fmsg").value.trim();
-  if(!n||!e||!m){alert("Please complete all required fields.");return;}
-  document.getElementById("formSuccess").style.display="block";
-  setTimeout(()=>document.getElementById("formSuccess").style.display="none",5000);
-  document.getElementById("fname").value="";document.getElementById("femail").value="";document.getElementById("fmsg").value="";document.getElementById("fservice").value="";
-}
-</script>
+    <section class="contact-section" id="contact"><div class="container section"><p class="eyebrow">08 / Let’s connect</p><div class="contact-grid"><h2>Good work starts<br> with a <em>conversation.</em></h2><div><p>I’m open to connecting with professionals, exploring internship and career opportunities, collaborating on business ideas, and contributing to meaningful projects.</p><div class="contact-links"><a href="mailto:hiruni@docxdeveloper.com">Email me <span aria-hidden="true">↗</span><small>hiruni@docxdeveloper.com</small></a><a href="https://www.linkedin.com/in/hiruniweerawansha" target="_blank" rel="noopener noreferrer">LinkedIn profile <span aria-hidden="true">↗</span><span class="sr-only"> (opens in a new tab)</span></a></div></div></div><div class="interests"><span class="eyebrow">Areas of interest</span><p>Digital Marketing · Brand Management · Business Development · Entrepreneurship · Project Coordination</p></div></div></section>
+  </main>
+  <footer class="container footer"><a href="#home" class="footer-name">Hiruni Weerawansha<span>.</span></a><p>© <span id="year">2026</span> Hiruni Weerawansha</p><a class="back-top" href="#home">Back to top <span aria-hidden="true">↑</span></a></footer>
 </body>
 </html>
