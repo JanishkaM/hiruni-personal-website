@@ -27,18 +27,39 @@
   <meta name="twitter:image" content="https://imhiru.docxdeveloper.com/img/hiruni-social.jpg">
   <meta name="twitter:image:alt" content="Hiruni Weerawansha — Business, Marketing and Entrepreneurship. Portrait with burgundy typography and geometric lines on ivory.">
   <link rel="canonical" href="https://imhiru.docxdeveloper.com/">
-  <link rel="icon" href="favicon.ico">
-  <link rel="apple-touch-icon" href="icons/icon-128x128.png">
+  <link rel="icon" href="favicon.ico" sizes="any">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
     href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;450;500;550;600;650;700&family=Libre+Caslon+Display&display=swap"
     rel="stylesheet">
+  <script>
+    document.documentElement.classList.add('is-loading');
+    // Fail open if the main script cannot load or a request never settles.
+    window.portfolioLoadingFallback = setTimeout(() => {
+      document.documentElement.classList.remove('is-loading');
+      document.querySelector('#site-content')?.removeAttribute('inert');
+      const loader = document.querySelector('#page-loader');
+      if (loader) loader.hidden = true;
+    }, 20000);
+  </script>
   <link rel="stylesheet" href="styles.css">
   <script src="script.js" defer></script>
 </head>
 
 <body>
+  <div class="page-loader" id="page-loader" role="status" aria-live="polite" aria-label="Loading portfolio images">
+    <div class="loader-content">
+      <div class="loader-monogram" aria-hidden="true">hw<span>.</span></div>
+      <p class="loader-name">Hiruni Weerawansha</p>
+      <div class="loader-track" aria-hidden="true"><span id="loader-progress"></span></div>
+      <p class="loader-caption">Loading portfolio <span id="loader-percent" aria-hidden="true">0%</span></p>
+    </div>
+  </div>
+  <div id="site-content">
   <a class="skip-link" href="#main">Skip to content</a>
   <header class="header">
     <div class="container nav-wrap">
@@ -150,7 +171,7 @@
         </div>
         <article>
           <p class="eyebrow">Full-time · On-site · 1 yr 1 mo</p>
-          <div class="employer-brand"><img class="brand-logo" src="img/fadna.jpeg" width="640" height="640" alt="Fadna logo" loading="lazy" decoding="async"><h3 class="large-heading">Fadna</h3></div>
+          <div class="employer-brand"><img class="brand-logo" src="img/fadna.jpeg" width="640" height="640" alt="Fadna logo" loading="eager" decoding="async"><h3 class="large-heading">Fadna</h3></div>
           <p class="employment-location">Pannipitiya, Colombo District, Western Province, Sri Lanka</p>
           <ol class="career-timeline" aria-label="Roles at Fadna">
             <li>
@@ -192,7 +213,7 @@
           <div class="project-index">01</div>
           <div class="project-title">
             <p class="eyebrow">Digital solutions</p>
-            <div class="project-brand"><img class="brand-logo" src="img/oneattend.png" width="512" height="512" alt="OneAttend logo" loading="lazy" decoding="async"><h3><a href="https://docxdeveloper.com/oneattend" target="_blank" rel="noopener noreferrer">OneAttend <span aria-hidden="true">↗</span><span class="sr-only"> (opens in a new tab)</span></a></h3></div>
+            <div class="project-brand"><img class="brand-logo" src="img/oneattend.png" width="512" height="512" alt="OneAttend logo" loading="eager" decoding="async"><h3><a href="https://docxdeveloper.com/oneattend" target="_blank" rel="noopener noreferrer">OneAttend <span aria-hidden="true">↗</span><span class="sr-only"> (opens in a new tab)</span></a></h3></div>
           </div>
           <div class="project-copy">
             <p>A digital attendance management solution designed for settings such as gyms and tuition classes, with
@@ -236,7 +257,7 @@
         <div class="ventures-grid">
           <article>
             <p class="eyebrow">Self-employed · Hybrid</p>
-            <div class="venture-brand"><img class="brand-logo" src="img/docxdeveloper.png" width="500" height="500" alt="DocxDeveloper logo" loading="lazy" decoding="async"><h3>DocxDeveloper</h3></div>
+            <div class="venture-brand"><img class="brand-logo" src="img/docxdeveloper.png" width="500" height="500" alt="DocxDeveloper logo" loading="eager" decoding="async"><h3>DocxDeveloper</h3></div>
             <p class="venture-role">General Manager &amp; Head of Finance &amp; Co-Founder</p>
             <div class="venture-tenure">
               <p><time datetime="2024-07">Jul 2024</time> — Present</p>
@@ -250,7 +271,7 @@
           </article>
           <article>
             <p class="eyebrow">CV &amp; professional document services</p>
-            <div class="venture-brand"><img class="brand-logo" src="img/docxdesigner.png" width="500" height="500" alt="DocxDesigner logo" loading="lazy" decoding="async"><h3>DocxDesigner</h3></div>
+            <div class="venture-brand"><img class="brand-logo" src="img/docxdesigner.png" width="500" height="500" alt="DocxDesigner logo" loading="eager" decoding="async"><h3>DocxDesigner</h3></div>
             <p>A service initiative creating professional CVs and documents to help individuals present their
               qualifications and experience effectively.</p><a class="text-link" href="https://design.docxdeveloper.com"
               target="_blank" rel="noopener noreferrer">Visit DocxDesigner <span aria-hidden="true">↗</span><span
@@ -366,6 +387,7 @@
     <p>© <span id="year">2026</span> Hiruni Weerawansha</p><a class="back-top" href="#home">Back to top <span
         aria-hidden="true">↑</span></a>
   </footer>
+  </div>
 </body>
 
 </html>

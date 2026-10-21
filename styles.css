@@ -57,3 +57,20 @@
   .button:hover,.header .nav-contact:hover{transform:translateY(-2px)}
 }
 @media print{.reveal-pending{opacity:1;transform:none}.hero-masthead{grid-template-columns:1fr 160px}.hero-masthead h1{font-size:62px}}
+
+
+/* Loading state: an ivory canvas, monogram, and real image progress. */
+.page-loader{display:none;position:fixed;inset:0;z-index:1000;background:var(--paper);place-items:center;padding:24px;opacity:1;transition:opacity .24s ease}
+.is-loading .page-loader:not([hidden]){display:grid}
+.is-loading{overflow:hidden}
+.page-loader.is-finished{opacity:0}
+.loader-content{width:min(240px,100%);text-align:center}
+.loader-monogram{font-family:var(--serif);font-size:76px;letter-spacing:-5px;line-height:1.1;color:var(--ink)}
+.loader-monogram span{color:var(--accent)}
+.loader-name{font-size:12px;letter-spacing:.08em;color:var(--ink);margin-top:18px}
+.loader-track{height:1px;background:var(--line);margin:32px 0 13px;overflow:hidden}
+.loader-track span{display:block;height:100%;width:0;background:var(--accent);transition:width .2s ease}
+.loader-caption{display:flex;justify-content:space-between;font-size:10px;letter-spacing:.06em;color:var(--muted)}
+.is-loading .hero h1,.is-loading .hero-bottom,.is-loading .hero-portrait{animation-play-state:paused}
+@media(prefers-reduced-motion:reduce){.page-loader,.loader-track span{transition:none}}
+@media print{.page-loader{display:none!important}.is-loading{overflow:visible}}
